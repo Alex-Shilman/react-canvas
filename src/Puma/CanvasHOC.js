@@ -1,7 +1,7 @@
 /*eslint-disable */
 import React, { Component } from 'react';
-//import lib from './CanvasLib_2';
-import lib from './CanvasLib';
+import lib from './CanvasLib_2';
+//import lib from './CanvasLib';
 
 const canvasWrapper = (Symbol, WrappedComponent) => {
   return class CanvasWrapper extends Component {
@@ -25,6 +25,10 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     componentWillReceiveProps(nextProps){
       const { draw } = nextProps;
       draw && this.handleDrawing();
+    }
+
+    shouldComponentUpdate(){
+      return false;
     }
 
     handleResize(e){
@@ -66,7 +70,14 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     handleDrawing(){
+      const { updateButtonVisibility } = this.props;
+      debugger;
       const exportRoot = new lib[Symbol]();
+      exportRoot.onAnimationEnd = (flag) => {
+        debugger;
+        updateButtonVisibility(flag);
+      }
+      debugger;
       this.stage = new createjs.Stage(this.canvas);
       this.stage.addChild(exportRoot);
       //Registers the "tick" event listener.
@@ -77,10 +88,11 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     render(){
+      const { updateButtonVisibility, ...rest } = this.props;
       return (
         <WrappedComponent
           canvasRef={(canvasEl) => {this.canvas = canvasEl}}
-          {...this.props}
+          {...rest}
         />
       )
     }

@@ -17,6 +17,7 @@
   lib.ssMetadata = [];
 
 
+
 // symbols:
 
 
@@ -709,12 +710,13 @@
 
   (lib.AL_L10_08_001 = function(mode,startPosition,loop) {
     if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
-    /*
+
     // timeline functions:
+
     this.frame_83 = function() {
-      animationEnds();
+      this.onAnimationEnd.call(this, true);
     }
-    */
+
     // actions tween:
     this.timeline.addTween(cjs.Tween.get(this).wait(83).call(this.frame_83).wait(1));
 
