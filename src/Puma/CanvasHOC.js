@@ -1,7 +1,7 @@
 /*eslint-disable */
 import React, { Component } from 'react';
 import lib from './CanvasLib_2';
-//import lib from './CanvasLib';
+
 
 const canvasWrapper = (Symbol, WrappedComponent) => {
   return class CanvasWrapper extends Component {
@@ -10,7 +10,7 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     lastH = 0
     lastS = 1
     stage = {}
-    isResp = false
+
 
     componentDidMount(){
       const { draw } = this.props;
@@ -32,20 +32,17 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     handleResize(e){
-      this.isResp = true;
       this.resizeCanvas()
     }
 
     resizeCanvas = () => {
+      const { isResp, respDim, scaleType, isScale } = this.props;
       const canvas = this.canvas;
-      var respDim = 'both';
-      var isScale = true;
-      var scaleType = 1;
-      var w = lib.properties.width, h = lib.properties.height;
-      var iw = window.innerWidth, ih=window.innerHeight;
-      var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+      let w = lib.properties.width, h = lib.properties.height;
+      let iw = window.innerWidth, ih=window.innerHeight;
+      let pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
 
-      if(this.isResp) {
+      if(isResp) {
         if((respDim=='width' && this.lastW==iw) || (respDim=='height' && this.lastH==ih)) {
           sRatio = this.lastS;
         }
@@ -62,11 +59,13 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
       }
       canvas.width = w*pRatio*sRatio;
       canvas.height = h*pRatio*sRatio;
-      canvas.style.width = w*sRatio+'px';
-      canvas.style.height = h*sRatio+'px';
+      canvas.style.width = `${w*sRatio}px`;
+      canvas.style.height = `${h*sRatio}px`;
       this.stage.scaleX = pRatio*sRatio;
       this.stage.scaleY = pRatio*sRatio;
-      this.lastW = iw; this.lastH = ih; this.lastS = sRatio;
+      this.lastW = iw;
+      this.lastH = ih;
+      this.lastS = sRatio;
     }
 
     handleDrawing(){
@@ -85,7 +84,7 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     render(){
-      const { updateState, ...rest } = this.props;
+      const { updateState, isResp, respDim, scaleType, isScale, ...rest } = this.props;
       return (
         <WrappedComponent
           canvasRef={(canvasEl) => {this.canvas = canvasEl}}

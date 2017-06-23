@@ -5,7 +5,6 @@ import './App.css';
 
 
 const WrappedPuma = CanvasWrapper('AL_L10_08_001', Canvas);
-const dimentions = {width:280, height:192};
 
 class App extends Component {
   state = {
@@ -21,22 +20,26 @@ class App extends Component {
     const { drawPuma, buttonVisibility } = this.state;
     return (
       <div className="App">
-          <WrappedPuma 
-              {...dimentions}
+          <section className="puma_section">
+            <WrappedPuma
               updateState={this.onUpdateState}
               draw={drawPuma}
-          />
+              isResp={true}
+              respDim="both"
+              scaleType={1}
+              isScale={false}
+            />
+          </section>
         <section className="actions">
           {
             (buttonVisibility)
-              && <button
-                  className="fire_action"
-                  onClick={() => {this.onUpdateState({buttonVisibility: false, drawPuma: true})}}>
-                  Jump Puma
-                </button>
+            && <button
+                className="fire_action"
+                onClick={() => {this.onUpdateState({buttonVisibility: false, drawPuma: true})}}>
+                Jump Puma
+              </button>
           }
         </section>
-
       </div>
     );
   }

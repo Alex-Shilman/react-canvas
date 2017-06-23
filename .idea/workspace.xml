@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0ad4c2e-cfaa-4f0a-b052-ce1b7cca4d14" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Puma/Canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Puma/Graph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Puma/PumaLibs.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Puma/CanvasHOC.js" afterPath="$PROJECT_DIR$/src/Puma/CanvasHOC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Puma/CanvasLib_2.js" afterPath="$PROJECT_DIR$/src/Puma/CanvasLib_2.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,13 +24,13 @@
           <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
-                    <marker date="1498227555000" expanded="true" signature="272:1072" ph="{...}" />
-                    <marker date="1498227555000" expanded="true" signature="472:1070" ph="{...}" />
-                    <marker date="1498227555000" expanded="true" signature="548:1059" ph="&lt;div/&gt;" />
+                    <marker date="1498232949000" expanded="true" signature="228:1171" ph="{...}" />
+                    <marker date="1498232949000" expanded="true" signature="428:1169" ph="{...}" />
+                    <marker date="1498232949000" expanded="true" signature="504:1158" ph="&lt;div/&gt;" />
                   </folding>
                 </state>
               </provider>
@@ -100,8 +95,8 @@
           <file leaf-file-name="CanvasLib_2.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Puma/CanvasLib_2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="592">
-                  <caret line="716" column="35" lean-forward="true" selection-start-line="716" selection-start-column="35" selection-end-line="716" selection-end-column="35" />
+                <state relative-caret-position="10500">
+                  <caret line="700" column="4" lean-forward="true" selection-start-line="700" selection-start-column="4" selection-end-line="700" selection-end-column="4" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -112,10 +107,25 @@
           <file leaf-file-name="CanvasHOC.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Puma/CanvasHOC.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CanvasLib.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Puma/CanvasLib.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="335">
+                  <caret line="753" column="94" lean-forward="true" selection-start-line="753" selection-start-column="2" selection-end-line="753" selection-end-column="94" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <marker date="1498155896000" expanded="true" signature="2282:18093" ph="/*...*/" />
+                    <marker date="1498155896000" expanded="true" signature="18094:34240" ph="/*...*/" />
+                    <marker date="1498155896000" expanded="true" signature="78572:79084" ph="/*...*/" />
                   </folding>
                 </state>
               </provider>
@@ -134,7 +144,6 @@
       <find>img</find>
       <find>initialize</find>
       <find>this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));</find>
-      <find>isResp</find>
       <find>canvas</find>
       <find>graphblanck</find>
       <find>mask</find>
@@ -144,13 +153,15 @@
       <find>PUMAc</find>
       <find>curv</find>
       <find>stage</find>
-      <find>isScale</find>
       <find>lastS</find>
       <find>animation</find>
       <find>*/</find>
       <find>name</find>
-      <find>respDim</find>
       <find>this.instance = new lib.PUMAc(&quot;synched&quot;,0);</find>
+      <find>isResp</find>
+      <find>respDim</find>
+      <find>scaleType</find>
+      <find>isScale</find>
       <find>frame_</find>
     </findStrings>
   </component>
@@ -171,8 +182,8 @@
         <option value="$PROJECT_DIR$/src/Puma/CanvasLib.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Puma/CanvasLib_2.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Puma/CanvasHOC.js" />
       </list>
     </option>
@@ -364,12 +375,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1497981658686</updated>
-      <workItem from="1497981659869" duration="37441000" />
+      <workItem from="1497981659869" duration="41566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37441000" />
+    <option name="totallyTimeSpent" value="41566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="41" width="1920" height="1080" extended-state="0" />
@@ -419,19 +430,6 @@
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Puma/CanvasLib.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="724" column="0" lean-forward="false" selection-start-line="718" selection-start-column="0" selection-end-line="724" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1498155896000" expanded="true" signature="2282:18093" ph="/*...*/" />
-            <marker date="1498155896000" expanded="true" signature="18094:34240" ph="/*...*/" />
-            <marker date="1498155896000" expanded="true" signature="78572:79084" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -492,19 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <marker date="1498227555000" expanded="true" signature="272:1072" ph="{...}" />
-            <marker date="1498227555000" expanded="true" signature="472:1070" ph="{...}" />
-            <marker date="1498227555000" expanded="true" signature="548:1059" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/workspace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5887">
@@ -518,20 +503,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Puma/CanvasLib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="753" column="94" lean-forward="true" selection-start-line="753" selection-start-column="2" selection-end-line="753" selection-end-column="94" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1498155896000" expanded="true" signature="2282:18093" ph="/*...*/" />
+            <marker date="1498155896000" expanded="true" signature="18094:34240" ph="/*...*/" />
+            <marker date="1498155896000" expanded="true" signature="78572:79084" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Puma/CanvasLib_2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="716" column="35" lean-forward="true" selection-start-line="716" selection-start-column="35" selection-end-line="716" selection-end-column="35" />
+        <state relative-caret-position="10500">
+          <caret line="700" column="4" lean-forward="true" selection-start-line="700" selection-start-column="4" selection-end-line="700" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1498232949000" expanded="true" signature="228:1171" ph="{...}" />
+            <marker date="1498232949000" expanded="true" signature="428:1169" ph="{...}" />
+            <marker date="1498232949000" expanded="true" signature="504:1158" ph="&lt;div/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Puma/CanvasHOC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="74" column="35" lean-forward="false" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
