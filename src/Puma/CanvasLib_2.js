@@ -714,7 +714,7 @@
     // timeline functions:
 
     this.frame_83 = function() {
-      this.onAnimationEnd.call(this, true);
+      this.onAnimationEnd.call(this);
     }
 
     // actions tween:

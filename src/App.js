@@ -13,18 +13,17 @@ class App extends Component {
     buttonVisibility:false
   }
 
-  showButton = (flag = false) => {
-    this.setState({buttonVisibility: flag, drawPuma: false});
+  onUpdateState = ({buttonVisibility = false, drawPuma = false}) => {
+    this.setState({buttonVisibility, drawPuma});
   }
 
   render() {
-    const { drawPuma, toggle, buttonVisibility } = this.state;
-    debugger;
+    const { drawPuma, buttonVisibility } = this.state;
     return (
       <div className="App">
           <WrappedPuma 
               {...dimentions}
-              updateButtonVisibility={this.showButton}
+              updateState={this.onUpdateState}
               draw={drawPuma}
           />
         <section className="actions">
@@ -32,7 +31,7 @@ class App extends Component {
             (buttonVisibility)
               && <button
                   className="fire_action"
-                  onClick={() => {this.setState({buttonVisibility: false, drawPuma: true})}}>
+                  onClick={() => {this.onUpdateState({buttonVisibility: false, drawPuma: true})}}>
                   Jump Puma
                 </button>
           }

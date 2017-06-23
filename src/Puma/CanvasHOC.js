@@ -70,14 +70,11 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     handleDrawing(){
-      const { updateButtonVisibility } = this.props;
-      debugger;
+      const { updateState } = this.props;
       const exportRoot = new lib[Symbol]();
-      exportRoot.onAnimationEnd = (flag) => {
-        debugger;
-        updateButtonVisibility(flag);
-      }
-      debugger;
+      exportRoot.onAnimationEnd = () =>
+        updateState({buttonVisibility:true, drawPuma:false});
+
       this.stage = new createjs.Stage(this.canvas);
       this.stage.addChild(exportRoot);
       //Registers the "tick" event listener.
@@ -88,7 +85,7 @@ const canvasWrapper = (Symbol, WrappedComponent) => {
     }
 
     render(){
-      const { updateButtonVisibility, ...rest } = this.props;
+      const { updateState, ...rest } = this.props;
       return (
         <WrappedComponent
           canvasRef={(canvasEl) => {this.canvas = canvasEl}}
